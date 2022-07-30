@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore bootstrap</title>
+    <!-- bootstrap css link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navbar Start  
+    ----------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container mb-5">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="images/LOGO.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active fs-5" aria-current="page" href="assignment.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#">Deals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#">Success</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#">About</a>
+            </li>
+            
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-outline-primary fw-bold fs-5" type="submit">Register</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  <!-----------------
+       Navbar end  -->
+        <!-- register form  -->
+        <section class="container">
+          <div class=" row justify-content-center align-items-center">
+            <div class="col-md-6 gx-5">
+              <h1 class="mb-5">Please Registration</h1>
+              <!-- main input  -->
+              <!-- emaail and password  -->
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <!-- first and last name write  -->
+              <div class="row mb-3">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+              </div>
+              <!-- address  -->
+              
+                <div class="d-flex ">
+                  <input class="form-control mb-3 me-2" list="datalistOptions" id="exampleDataList" placeholder="Type and search Country">
+                  <datalist id="datalistOptions">
+                    <option value="bangladesh">
+                    <option value="India">
+                    <option value="Srilanka">
+                    <option value="Los Angeles">
+                    <option value="Chicago">
+                  </datalist>
+                  <input class="form-control mb-3" list="datalistOptions" id="exampleDataList" placeholder="Type and search City">
+                  <datalist id="datalistOptions">
+                    <option value="Dhaka">
+                    <option value="Khulna">
+                    <option value="Barishal">
+                    <option value="Sylhet">
+                    <option value="Chittagong">
+                  </datalist>
+                </div>
+                  
+                  <!-- gender selection  -->
+                  
+                  <select class="form-select mb-3" aria-label="Default select example">
+                    <option selected>Gender</option>
+                    <option value="1">Mail</option>
+                    <option value="2">Femail</option>
+                    <option value="3">Outhers</option>
+                  </select>
+                  <!-- terms and condition  -->
+                  <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                    <label class="form-check-label" for="flexCheckIndeterminate">
+                      Accept our <a class="text-danger" href="">terms & condition</a>
+                    </label>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary">Submit</button>
+                    <button class="btn btn-danger ms-3" type="reset">Reset</button>
+                  </div>
+
+            </div>
+            <!-- img section  -->
+            <div class="col-md-6">
+              <img class="img-fluid" src="images/register banner.png" alt="">
+            </div>
+          </div>
+        </section>
+    <!-- bootstrap js link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
